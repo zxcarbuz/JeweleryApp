@@ -6,24 +6,25 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Product {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public int pid;
 
     @ColumnInfo(name = "name")
-    public String Name;
+    public String name;
 
     @ColumnInfo(name = "full_Name")
     public String fullName;
 
     @ColumnInfo(name = "price")
-    public String price;
+    public double price;
 
     @ColumnInfo(name = "sale")
-    public String sale;
+    public double sale;
 
     @ColumnInfo(name = "info")
     public String info;
 
     @ColumnInfo(name = "identity")
     public String identity;
+    public String url;
 }

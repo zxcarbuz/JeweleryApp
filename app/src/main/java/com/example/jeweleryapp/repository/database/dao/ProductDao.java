@@ -26,5 +26,8 @@ public interface ProductDao {
     void insert(Product product);
 
     @Delete
+    void deleteAll(Product... products);
+
+    @Delete
     void delete(Product product);
 }
